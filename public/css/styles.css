@@ -1,0 +1,456 @@
+:root {
+    --amarillo: #eac926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    background-color: var(--amarillo);
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: var(--Gris-claro);
+    padding-bottom: 25px;
+}
+
+.main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: var(--Gris-claro);
+}
+
+.banner {
+    width: auto;
+    background-color: var(--Gris-claro);
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+footer i {
+    color: var(--Celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.icon-hover:hover{
+    color: var(--Azul);
+}
+
+.header-logo-barra {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-header {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+}
+
+.header-buscador {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.barra-de-busqueda {
+    width: 100%;
+}
+
+#buscador {
+    width: 85%;
+    margin-left: 5%;
+    padding: 5%;
+    border-radius: 8px;
+}
+
+.fa-search {
+    color: var(--Gris-oscuro);
+    position: relative;
+    right: 25px;
+}
+
+.nav-frase {
+    text-align: center;
+    margin: 15px;
+}
+
+.mano-nav {
+    margin-right: 5px;
+}
+
+.links {
+    display: none;
+}
+
+.burger-menu {
+    background-color: var(--Celeste);
+    width: 40px;
+    text-align: center;
+    border-radius: 15%;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+.icono-burger {
+    font-size: 18px;
+    color: white;
+}
+
+.seccion-articulos {
+    margin-top: 18px;
+    padding: 0px 18px;
+}
+
+.seccion-ofertas {
+    margin-top: 8px;
+    padding: 0px 18px;
+}
+
+.articulos {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.articulos-info {
+    border-top: 1px solid var(--Gris-claro);
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.articulos-info i {
+    color: var(--Verde);
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--Verde);
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: 0.8s linear;
+    transition: 0.8s linear;
+}
+
+.articulos-info:hover i{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.linea-img {
+    height: 2px;
+}
+
+.titulares {
+    color: var(--Gris-oscuro);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.precio-descuento {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.precio {
+    flex-grow: 0.3;
+    font-size: 18px;
+    margin-right: 10px;
+    justify-content: flex-start;
+}
+
+.descuento {
+    flex-grow: 0.7;
+    font-size: 16px;
+    color: var(--Verde);
+    justify-content: flex-end;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: var(--Gris-oscuro);
+    font-weight: 500;
+    display: none;
+}
+
+.links li a {
+    color: black;
+    text-decoration: none;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.copyright {
+    margin-top: 15px;
+    padding-bottom: 8px;
+}
+
+
+/*  ------------  MODELO TABLET --------------  */
+
+
+@media(min-width:768px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .header-logo-barra-frase {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .header-logo-barra {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .logo-header {
+        width: 15%;
+        height: fit-content;
+    }
+    
+    .barra-de-busqueda {
+        width: 35%;
+    }
+
+    .header-buscador {
+        width: 100%;
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #buscador {
+        width: 200%;
+        margin-left: 5%;
+        padding: 5%;
+        border-radius: 8px;
+    }
+
+    .fa-search {
+        color: var(--Gris-oscuro);
+        position: relative;
+        right: 25px;
+    }   
+
+    .nav-frase {
+        display: flex;
+        width: 30%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .links {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .nav-opciones {
+        width: 50%;
+        display: flex;
+        margin: 20px;
+    }
+
+    .nav-opciones li {
+        text-align: right;
+        display: inline-block;
+        flex-direction: row;
+        padding: 0 17px;
+    }
+
+    .nav-cuenta {
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        margin: 20px;
+    }
+
+    .nav-cuenta li {
+        text-align: right;
+        display: inline-block;
+        flex-direction: row;
+        padding: 0 15px;
+    }
+
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 16px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 50%;
+    }
+
+    .seccion-articulos , .seccion-ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contenedor-titulares {
+        width: 100%;
+    }
+
+    .articulos-img {
+        width: 100%;
+    }
+
+    .precio-descuento {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .articulos-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .descripcion {
+        display: flex;
+    }
+}
+
+
+/*  ------------  MODELO DESKTOP --------------  */
+
+
+@media(min-width:1024px) {
+
+    .nav-opciones li {
+        padding: 0 20px;
+    }
+
+    .footer-sin-copy {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-sin-copy div{
+        margin: 0 16px;
+    }
+
+    .copyright {
+        text-align: left;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+    }    
+
+   .contenedor-titulares {
+        width: 100%;
+    }
+    
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 16px 30px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 25%;
+    }
+
+    .seccion-articulos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .seccion-ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .articulos-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        box-shadow: none;
+        transition: all 0.8s;
+    }
+
+    .articulos-info:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .articulos-info:hover .descripcion{
+        display: initial;
+    }
+
+    .precio-descuento {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .descripcion{
+        display: none;
+        border-radius: 8px;
+    }
+
+    .articulos:hover{
+        .descripcion{
+            display: flex;
+            background-color: var(--Gris-claro);
+            padding: 8px;
+
+        }
+    }
+} 

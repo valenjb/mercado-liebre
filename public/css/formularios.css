@@ -1,0 +1,127 @@
+:root {
+  --amarillo: #eac926;
+  --Azul: #03264C;
+  --Celeste: #1259c3;
+  --Gris-oscuro: #666;
+  --Gris-claro: #ebebeb;
+  --Verde: #39b54a;
+
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html{
+  background-color: var(--Gris-claro);
+}
+
+.banner{
+  display: none;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-containpmner{
+  position: absolute;
+  bottom: 50%;
+  padding: 18px;
+  background-color: white;
+  border-radius: 15px ;
+}
+
+.form-container {
+  margin-top: 40px;
+  padding: 18px;
+  background-color: white;
+  border-radius: 15px ;
+}
+
+.input-text,
+.input-email,
+.input-password,
+.input-date {
+  width: 90vw;
+  font-size: 18px;
+  padding: 5px;
+}
+
+form div,
+form p {
+  margin-bottom: 10px;
+}
+
+.user-profile-container,
+.intereses-container {
+  margin-left: 15px;
+}
+
+form button {
+  width: 90vw;
+  padding: 10px 20px;
+  background-color: var(--Azul);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 450ms;
+}
+
+button:hover {
+  background-color: #0022AA;
+}
+
+.footer-login {
+  position: absolute;
+  bottom: 0%;
+  background-color: white;
+}
+
+.footer-register {
+  background-color: white;
+}
+
+
+@media (min-width: 769px) {
+
+  .form-container {
+    text-align: center;
+  }
+
+  .input-text,
+  .input-email,
+  .input-password,
+  .input-date {
+    width: 40vw;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  form button {
+    width: 40vw;
+  }
+
+  .user-profile-container,
+  .intereses-container {
+    text-align: justify;
+    margin-left: 40%;
+    margin-bottom: 20px;
+  }
+
+  .footer-login,.footer-register {
+    position: absolute;
+    bottom: 0%;
+    background-color: white;
+  }
+  
+}
