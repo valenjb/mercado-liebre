@@ -358,6 +358,7 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
+        margin-bottom: 0px;
     }
 
     .descripcion {
