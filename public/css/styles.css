@@ -328,7 +328,6 @@ img {
     .articulos {
         display: flex;
         flex-wrap: wrap;
-        padding: 16px;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 50%;
     }
@@ -400,7 +399,6 @@ img {
     .articulos {
         display: flex;
         flex-wrap: wrap;
-        padding: 16px 30px;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 25%;
     }
@@ -424,6 +422,7 @@ img {
         width: 100%;
         box-shadow: none;
         transition: all 0.8s;
+        margin-bottom: 0px;
     }
 
     .articulos-info:hover {
